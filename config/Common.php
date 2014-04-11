@@ -8,14 +8,11 @@ class Common extends Config
 {
     public function define(Container $di)
     {
+        // override the factory for translator locator
+        $di->params['Aura\Intl\TranslatorLocator']['factory'] = $di->lazyNew('FOA\Filter_Intl_Bundle\TranslatorFactory');
     }
     
     public function modify(Container $di)
     {
-        /**
-         * Aura\Intl\TranslatorLocator
-         */
-        // override the factory for translator locator
-        $di->params['Aura\Intl\TranslatorLocator']['factory'] = $di->lazyNew('FOA\Filter_Intl_Bundle\TranslatorFactory');
     }
 }
