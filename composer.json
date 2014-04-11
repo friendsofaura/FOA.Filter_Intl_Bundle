@@ -1,32 +1,32 @@
 {
-    "name": "aura/filter-intl-bundle",
+    "name": "foa/filter-intl-bundle",
     "type": "library",
     "description": "Integration bundle for Aura.Filter with Aura.Intl",
     "keywords": [ "filter", "validate", "sanitize", "intl"],
-    "homepage": "https://github.com/harikt/Aura.Filter_Intl_Bundle",
+    "homepage": "https://github.com/friendsofaura/FOA.Filter_Intl_Bundle",
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Aura Contributors",
-            "homepage": "https://github.com/harikt/Aura.Filter_Intl_Bundle/contributors"
+            "name": "FOA Contributors",
+            "homepage": "https://github.com/harikt/FOA.Filter_Intl_Bundle/contributors"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "aura/intl": "1.*",
-        "aura/filter": "1.*"
+        "aura/intl": "dev-develop",
+        "aura/filter": "dev-develop"
     },
     "autoload": {        
         "psr-4": {
-            "Aura\\Filter_Intl_Bundle\\": "src/",
-            "Aura\\Filter_Intl_Bundle\\_Config\\": "config/"
+            "FOA\\Filter_Intl_Bundle\\": "src/",
+            "FOA\\Filter_Intl_Bundle\\_Config\\": "config/"
         }
     },
     "extra": {
         "aura": {
-            "type": "library",
+            "type": "kernel",
             "config": {
-                "common": "Aura\\Filter_Intl_Bundle\\_Config\\Common"                
+                "common": "FOA\\Filter_Intl_Bundle\\_Config\\Common"                
             }
         }
     }
