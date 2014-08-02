@@ -12,9 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
         "aura/intl": ">=1.0.0,<=2.0.0",
-        "aura/filter": ">=1.0.0,<=2.0.0"
+        "aura/filter": "2.0.*@dev"
     },
     "autoload": {
         "psr-4": {
@@ -30,7 +29,7 @@
             }
         },
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }
