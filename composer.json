@@ -13,8 +13,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "aura/intl": ">=1.0.0,<=2.0.0",
-        "aura/filter": ">=1.0.0,<=2.0.0"
+        "aura/intl": ">=1.1.0,<=2.0.0",
+        "aura/filter": ">=1.0.1,<=2.0.0"
     },
     "autoload": {
         "psr-4": {
@@ -24,9 +24,13 @@
     },
     "extra": {
         "aura": {
-            "type": "kernel",
+            "type": "bundle",
             "config": {
-                "common": "FOA\\Filter_Intl_Bundle\\_Config\\Common"
+                "common": [
+                    "Aura\\Filter\\_Config\\Common",
+                    "Aura\\Intl\\_Config\\Common",
+                    "FOA\\Filter_Intl_Bundle\\_Config\\Common"
+                ]
             }
         },
         "branch-alias": {
